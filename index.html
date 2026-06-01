@@ -2,47 +2,31 @@
 <html lang="en">
 <head>
 
-    <!-- Basic Page Needs
-    ================================================== -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Kevin Portfolio</title>
+    <title>Kevin Soto Guerrero — Backend Developer</title>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Backend Developer with 6+ years of experience in PHP, Laravel, MySQL and Golang. Based in Sabaneta, Antioquia.">
+    <meta name="author" content="Kevin Soto Guerrero">
+    <meta name="keywords" content="backend developer, PHP, Laravel, Golang, MySQL, Colombia">
 
-    <!-- Mobile Specific Metas
-    ================================================== -->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 
-    <!-- Favicon
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/icono2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icono2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icono2.png">
+    <link rel="icon" sizes="16x16" href="assets/img/icono2.ico">
     <link rel="manifest" href="assets/img/manifest.json">
-    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#0d1117">
 
-    <!-- Stylesheets
-    ================================================== -->
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
-    <!-- Font Awesome core CSS -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -51,200 +35,479 @@
 </head>
 <body>
 
-    <!-- Hero Section, Background Image change in css -->
+    <!-- Hero -->
     <div id="top" class="hero background-overlay">
-    
-        <!-- Name & Description -->
         <div class="hero-content">
-            <h1>I am Kevin Soto Guerrero</h1>
-            <p class="hero-job"><span>I'M A CREATIVE WEB DEVELOPER</span></p>
-            <!-- <p class="hero-job-desc">I STAND ON A SPOT WHERE DESIGN &amp; CODE INTERSECTS. </p> -->
-
-        </div><!-- /.hero-content -->
-
+            <div class="hero-avatar">
+                <img src="assets/img/profile_picture.jpeg" alt="Kevin Soto Guerrero">
+            </div>
+            <p class="hero-eyebrow" data-i18n="hero.eyebrow">Hello, I'm</p>
+            <h1>Kevin Soto Guerrero</h1>
+            <p class="hero-job"><span data-i18n="hero.job">Backend Developer</span></p>
+            <p class="hero-tagline">PHP &middot; Laravel &middot; MySQL &middot; Golang</p>
+            <a href="#about" class="btn hero-btn page-scroll" data-i18n="hero.btn">Learn More</a>
+        </div>
         <div class="hero-arrow page-scroll home-arrow-down">
-            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-        </div><!-- /.hero-arrow -->
+            <a href="#about"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+        </div>
+    </div>
 
-    </div><!-- /.hero -->
-    <!-- End Hero -->
+    <!-- Header -->
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="page-scroll site-logo">
+                        <a href="#top">KSG</a>
+                    </div>
+                </div>
+                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="page-scroll"><a href="#top"      data-i18n="nav.home">Home</a></li>
+                        <li class="page-scroll"><a href="#about"    data-i18n="nav.about">About</a></li>
+                        <li class="page-scroll"><a href="#skills"   data-i18n="nav.skills">Skills</a></li>
+                        <li class="page-scroll"><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                        <li class="page-scroll"><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                        <li class="page-scroll"><a href="#courses"  data-i18n="nav.courses">Courses</a></li>
+                        <li class="page-scroll"><a href="#contact"  data-i18n="nav.contact">Contact</a></li>
+                        <li><button id="lang-toggle" class="lang-toggle">ES</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    
+    <main id="main" class="site-main">
 
-    <!-- Modals -->
-    <div id="portfolioItem1" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-1.jpg" alt="">
+        <!-- About section -->
+        <section class="site-section section-about" id="about">
+            <div class="container">
+                <h2 data-i18n="about.title">About Me</h2>
+                <p class="section-subtitle"><span data-i18n-html="about.subtitle">Systems Administrator &amp; Backend Developer</span></p>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 text-center">
+                        <p class="about-text" data-i18n="about.p1">I'm a Systems Information Administrator with 6+ years of experience in software development focused on backend. Strong analytical skills and expertise in requirements management, with a proven track record of delivering high-impact solutions.</p>
+                        <p class="about-text" data-i18n="about.p2">Responsible, dynamic, adaptable, efficient, and a fast learner.</p>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+                <div class="row about-cards">
+                    <div class="col-sm-4">
+                        <div class="about-card text-center">
+                            <div class="rectangle"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                            <h4 data-i18n="about.email">Email</h4>
+                            <p>kevinsotoguerrero@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="about-card text-center">
+                            <div class="rectangle"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                            <h4 data-i18n="about.phone">Phone</h4>
+                            <p>+57 318 875 5060</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="about-card text-center">
+                            <div class="rectangle"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                            <h4 data-i18n="about.location">Location</h4>
+                            <p>Sabaneta, Antioquia</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+            </div>
+        </section>
 
-    <div id="portfolioItem2" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-2.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+        <!-- Quote banner -->
+        <section class="section-background section-quote background-overlay text-center">
+            <div class="container">
+                <p data-i18n-html="quote.text">Building <span>robust backend systems</span> with clean code, solid architecture, and a focus on <span>performance &amp; reliability</span>.</p>
+            </div>
+        </section>
 
-    <div id="portfolioItem3" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-4.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+        <!-- Skills section -->
+        <section class="site-section section-skills" id="skills">
+            <div class="container">
+                <h2 data-i18n="skills.title">Technical Skills</h2>
+                <p class="section-subtitle"><span data-i18n="skills.subtitle">Technologies I work with</span></p>
+                <div class="row skills-content">
+                    <div class="col-sm-6">
+                        <div class="skills-grid">
+                            <span class="skill-tag"><i class="fa fa-code" aria-hidden="true"></i> PHP / Laravel</span>
+                            <span class="skill-tag"><i class="fa fa-database" aria-hidden="true"></i> MySQL</span>
+                            <span class="skill-tag"><i class="fa fa-terminal" aria-hidden="true"></i> Golang</span>
+                            <span class="skill-tag"><i class="fa fa-github" aria-hidden="true"></i> Git / GitHub</span>
+                            <span class="skill-tag"><i class="fa fa-file-code-o" aria-hidden="true"></i> JavaScript</span>
+                            <span class="skill-tag"><i class="fa fa-tasks" aria-hidden="true"></i> SCRUM / Agile</span>
+                            <span class="skill-tag"><i class="fa fa-clock-o" aria-hidden="true"></i> Time Management</span>
+                            <span class="skill-tag"><i class="fa fa-puzzle-piece" aria-hidden="true"></i> Problem Solving</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="skills-subtitle" data-i18n="skills.level">Proficiency</h3>
 
-    <div id="portfolioItem4" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-3.jpg" alt="">
+                        <div class="progress-group">
+                            <p>PHP / Laravel</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="90"></div>
+                            </div>
+                        </div>
+                        <div class="progress-group">
+                            <p>MySQL</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div>
+                            </div>
+                        </div>
+                        <div class="progress-group">
+                            <p>Golang</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="45"></div>
+                            </div>
+                        </div>
+                        <div class="progress-group">
+                            <p>Git / GitHub</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="90"></div>
+                            </div>
+                        </div>
+                        <div class="progress-group">
+                            <p>JavaScript</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="70"></div>
+                            </div>
+                        </div>
+                        <div class="progress-group">
+                            <p>SCRUM / Agile</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-transitiongoal="85"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+            </div>
+        </section>
 
-    <div id="portfolioItem5" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-5.jpg" alt="">
+        <!-- Experience Timeline -->
+        <section class="section-history" id="experience">
+            <div class="container">
+                <div class="text-center section-diff-title">
+                    <h2 data-i18n="exp.title">Work Experience</h2>
+                    <p data-i18n="exp.subtitle">My professional journey</p>
                 </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+                <ul class="timeline">
 
-    <div id="portfolioItem6" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-6.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+                    <li class="timeline-start">
+                        <div class="rectangle"><span>2026</span></div>
+                    </li>
 
-    <div id="portfolioItem7" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-7.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+                    <li class="timeline-inverted">
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-position">
+                                    <p data-i18n="exp.aveonline">Backend Developer — Aveonline</p>
+                                </div>
+                                <div class="timeline-date">
+                                    <p>2021–2026</p>
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p data-i18n="exp.aveonline.d">ERP module development with PHP/Laravel. Requirements analysis and management. Design of administrative solutions for business processes.</p>
+                            </div>
+                        </div>
+                    </li>
 
-    <div id="portfolioItem8" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-8.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+                    <li class="timeline-start">
+                        <div class="rectangle"><span>2020</span></div>
+                    </li>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery core js | Do not Delete -->
+                    <li>
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-date">
+                                    <p>2020</p>
+                                </div>
+                                <div class="timeline-position">
+                                    <p data-i18n="exp.porter">Backend Developer — Porter Metrics</p>
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p data-i18n="exp.porter.d">ETL tools development. User acceptance testing support and onboarding for new product features.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-start">
+                        <div class="rectangle"><span>2019</span></div>
+                    </li>
+
+                    <li class="timeline-inverted">
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-position">
+                                    <p data-i18n="exp.pullman">IT Administrator — Pullman Colombia</p>
+                                </div>
+                                <div class="timeline-date">
+                                    <p>2019–2020</p>
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p data-i18n="exp.pullman.d">Administration of the ADCI information system. Ensured data integrity and operational continuity.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="rectangle timeline-rectangle"></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <div class="timeline-date">
+                                    <p>2019</p>
+                                </div>
+                                <div class="timeline-position">
+                                    <p data-i18n="exp.unal">Teaching Assistant — UNAL</p>
+                                </div>
+                            </div>
+                            <div class="timeline-body">
+                                <p data-i18n-html="exp.unal.d">Programming I &amp; II mentoring. Resolved student questions and supported lecture activities.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-end">
+                        <div class="rectangle"><span>2016</span></div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="site-section section-education" id="education">
+            <div class="container">
+                <h2 data-i18n="edu.title">Education</h2>
+                <p class="section-subtitle"><span data-i18n="edu.subtitle">Academic Background</span></p>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="education-card text-center">
+                            <div class="rectangle medium-rectangle"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                            <h3 data-i18n="edu.degree">Administración de Sistemas Informáticos</h3>
+                            <p class="education-school">Universidad Nacional de Colombia</p>
+                            <p class="education-years">2016 — 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="site-section section-projects" id="projects">
+            <div class="container">
+                <h2 data-i18n="proj.title">Featured Projects</h2>
+                <p class="section-subtitle"><span data-i18n="proj.subtitle">Real work, real impact</span></p>
+                <div class="row projects-row">
+
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fa fa-cogs" aria-hidden="true"></i>
+                            </div>
+                            <h3 data-i18n="proj.erp.title">ERP Modules</h3>
+                            <p class="project-company"><i class="fa fa-building-o" aria-hidden="true"></i> <span data-i18n="proj.erp.company">Aveonline &middot; 2021–2026</span></p>
+                            <p data-i18n="proj.erp.d">Design and development of ERP modules for internal business processes. Focused on administrative solutions, requirements management, and multi-module backend architecture.</p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">Laravel</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Golang</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fa fa-exchange" aria-hidden="true"></i>
+                            </div>
+                            <h3 data-i18n="proj.etl.title">ETL Pipeline Tools</h3>
+                            <p class="project-company"><i class="fa fa-building-o" aria-hidden="true"></i> <span data-i18n="proj.etl.company">Porter Metrics &middot; 2020</span></p>
+                            <p data-i18n="proj.etl.d">Development of ETL (Extract, Transform, Load) tools for data pipeline management. Supported user acceptance testing and onboarding for new features in a data-driven product.</p>
+                            <div class="project-tags">
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">ETL</span>
+                                <span class="tag">Data Pipelines</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="project-card">
+                            <div class="project-icon">
+                                <i class="fa fa-server" aria-hidden="true"></i>
+                            </div>
+                            <h3 data-i18n="proj.adci.title">ADCI System</h3>
+                            <p class="project-company"><i class="fa fa-building-o" aria-hidden="true"></i> <span data-i18n="proj.adci.company">Pullman Colombia &middot; 2019–2020</span></p>
+                            <p data-i18n="proj.adci.d">Administration and maintenance of the ADCI information system. Ensured data integrity, system availability, and operational continuity for the business unit.</p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">IT Admin</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA banner -->
+        <section class="section-background section-me background-overlay text-center">
+            <div class="container page-scroll">
+                <h2 data-i18n="cta.title">Want to Work Together?</h2>
+                <p data-i18n="cta.desc">I'm open to new opportunities and collaborations.</p>
+                <a href="#contact" class="btn page-scroll" data-i18n="cta.btn">Get In Touch</a>
+            </div>
+        </section>
+
+        <!-- Courses section -->
+        <section class="site-section section-courses" id="courses">
+            <div class="container">
+                <h2 data-i18n-html="courses.title">Courses &amp; Certifications</h2>
+                <p class="section-subtitle"><span data-i18n="courses.subtitle">Continuous learning</span></p>
+                <div class="courses-grid">
+
+                    <div class="course-item">
+                        <span class="course-source">Platzi</span>
+                        <span class="course-name">Introducción a Laravel 9</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">Platzi</span>
+                        <span class="course-name">API REST con Laravel</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">Platzi</span>
+                        <span class="course-name">Curso Profesional de Git y GitHub</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">Platzi</span>
+                        <span class="course-name">Algoritmos y Diagramas de Flujo</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">Platzi</span>
+                        <span class="course-name">Introducción a la Terminal y Línea de Comandos</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">Platzi</span>
+                        <span class="course-name">Gestión Efectiva del Tiempo</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">Platzi</span>
+                        <span class="course-name">Inglés: Vocabulario y Expresiones</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">EOI</span>
+                        <span class="course-name">Cloud Computing</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">Cisco</span>
+                        <span class="course-name">Introduction to Packet Tracer</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">LinkedIn</span>
+                        <span class="course-name">Desarrollo ágil de software</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">SENA</span>
+                        <span class="course-name">Autocad 2D</span>
+                    </div>
+                    <div class="course-item">
+                        <span class="course-source">SENA</span>
+                        <span class="course-name">Herramientas Ofimáticas Aplicadas</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="site-section section-contact" id="contact">
+            <div class="container">
+                <h2 data-i18n="contact.title">Contact Me</h2>
+                <p class="section-subtitle"><span data-i18n="contact.subtitle">Let's build something together</span></p>
+                <div class="row">
+                    <form action="https://formspree.io/f/xwvzjedo" method="POST">
+                        <input type="hidden" name="_subject" value="New message from portfolio">
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" name="name" placeholder="Name" data-i18n-ph="ph.name" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="email" name="email" placeholder="Email" data-i18n-ph="ph.email" required>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" name="subject" placeholder="Subject" data-i18n-ph="ph.subject" required>
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" name="message" placeholder="Your Message" data-i18n-ph="ph.message" required></textarea>
+                        </div>
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-inverted" data-i18n="contact.btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Networks -->
+        <section class="section-networks accent-bg">
+            <div class="container">
+                <a href="https://github.com/kevinsotoguerrero" class="rectangle" target="_blank" rel="noopener">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/in/kevinsotoguerrero" class="rectangle" target="_blank" rel="noopener">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:kevinsotoguerrero@gmail.com" class="rectangle">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="colophon" class="site-footer">
+        <div class="container-fluid">
+            <ul class="list-unstyled list-inline">
+                <li class="page-scroll"><a href="#top"        data-i18n="nav.home">Home</a></li>
+                <li class="page-scroll"><a href="#about"      data-i18n="nav.about">About</a></li>
+                <li class="page-scroll"><a href="#skills"     data-i18n="nav.skills">Skills</a></li>
+                <li class="page-scroll"><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                <li class="page-scroll"><a href="#projects"   data-i18n="nav.projects">Projects</a></li>
+                <li class="page-scroll"><a href="#courses"    data-i18n="nav.courses">Courses</a></li>
+                <li class="page-scroll"><a href="#contact"    data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="page-scroll">
+                <a href="#top" class="rectangle">
+                    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div class="container text-center">
+            <p class="copyright" data-i18n-html="footer.copy">&copy; Kevin Soto Guerrero &middot; 2026</p>
+        </div>
+    </footer>
+
     <script src="assets/js/jquery.min.js"></script>
-
-    <!-- Bootstrap core js | Do not Delete -->
     <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Bootstrap progressbar JS -->
     <script src="assets/js/bootstrap-progressbar.min.js"></script>
-
-    <!-- Count To JS -->
-    <script src="assets/js/jquery.countTo.min.js"></script>
-
-    <!-- Easing JS -->
     <script src="assets/js/jquery.easing.min.js"></script>
-
-    <!-- Shuffle JS -->
-    <script src="assets/js/jquery.shuffle.min.js"></script>
-
-    <!-- Slick Carousel JS -->
-    <script src="assets/js/slick.min.js"></script>
-
-    <!-- Touchswipe JS -->
-    <script src="assets/js/touchswipe.min.js"></script>
-
-    <!-- Custom JS -->
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/script.js"></script>
-  
+
 </body>
 </html>
